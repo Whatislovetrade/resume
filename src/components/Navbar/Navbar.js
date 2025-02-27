@@ -11,7 +11,9 @@ const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
 
-  const toggleNavList = () => setShowNavList(!showNavList)
+  const toggleNavList = () => {
+    setShowNavList(!showNavList)
+  }
 
   return (
     <nav className='center nav'>
@@ -26,7 +28,7 @@ const Navbar = () => {
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Projects
+              Проекты
             </a>
           </li>
         ) : null}
@@ -38,7 +40,7 @@ const Navbar = () => {
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Skills
+              Скиллы
             </a>
           </li>
         ) : null}
@@ -50,7 +52,7 @@ const Navbar = () => {
               onClick={toggleNavList}
               className='link link--nav'
             >
-              Contact
+              соц.сети
             </a>
           </li>
         ) : null}
