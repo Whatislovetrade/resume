@@ -9,7 +9,7 @@ const about = {
   name: 'Влад',
   role: 'Фронтенд разработчик',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'Мой стек: HTML, CSS, SCSS, JavaScript, React, Redux, Redux Toolkit, Tailwind CSS.',
   resume: 'https://example.com',
   social: {
     linkedin: 'https://linkedin.com',
@@ -65,7 +65,31 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'vladmaslow1@mail.com',
 }
 
-export { header, about, projects, skills, contact }
+const experience = [
+  {
+    company: 'Apple',
+    date: '2018 - 2020',
+    position: 'Фронтенд разработчик',
+    stack: ['SASS', 'TypeScript', 'React'],
+    make: 'Разработал crm для компании'
+  },
+  {
+    company: 'Apple',
+    date: '2018 - 2020',
+    position: 'Фронтенд разработчик',
+    stack: ['SASS', 'TypeScript', 'React'],
+    make: 'Разработал crm для компании'
+  },
+  {
+    company: 'Apple',
+    date: '2018 - 2020',
+    position: 'Фронтенд разработчик',
+    stack: ['SASS', 'TypeScript', 'React'],
+    make: 'Разработал crm для компании'
+  }
+]
+
+export { header, about, projects, skills, contact, experience }

@@ -10,9 +10,20 @@ import './Navbar.css'
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
+  const body = document.body
+
+  function addOvverflow() {
+    !showNavList ? body.style.overflow = 'hidden' : body.style.overflow = ''
+  }
+
+  function closeNav() {
+    setShowNavList(false)
+    body.style.overflow = ''
+  }
 
   const toggleNavList = () => {
     setShowNavList(!showNavList)
+    addOvverflow()
   }
 
   return (
@@ -25,7 +36,7 @@ const Navbar = () => {
           <li className='nav__list-item'>
             <a
               href='#projects'
-              onClick={toggleNavList}
+              onClick={closeNav}
               className='link link--nav'
             >
               Проекты
@@ -37,10 +48,10 @@ const Navbar = () => {
           <li className='nav__list-item'>
             <a
               href='#skills'
-              onClick={toggleNavList}
+              onClick={closeNav}
               className='link link--nav'
             >
-              Скиллы
+              Навыки
             </a>
           </li>
         ) : null}
@@ -49,7 +60,7 @@ const Navbar = () => {
           <li className='nav__list-item'>
             <a
               href='#contact'
-              onClick={toggleNavList}
+              onClick={closeNav}
               className='link link--nav'
             >
               соц.сети
