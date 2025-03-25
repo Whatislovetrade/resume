@@ -8,12 +8,16 @@ const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Влад',
   role: 'Фронтенд разработчик',
-  description:
-    'Мой стек: HTML, CSS, SCSS, JavaScript, React, Redux, Redux Toolkit, Tailwind CSS.',
+  description: {
+    stack: ['Мой стек: HTML, CSS, SCSS, JavaScript, React, Redux, Redux Toolkit, Tailwind CSS.'],
+    descr: ['Привет! Я Влад — фронтенд-разработчик, разрабатываю удобные и быстрые интерфейсы, работаю с React, JavaScript, TypeScript, Tailwind CSS и Vite. Умею писать асинхронный код, взаимодействовать с бекендом и REST API. Опыт в оптимизации проектов, настройке сборки и рефакторинге кода. Люблю находить элегантные решения сложных задач и делать веб-приложения удобными для пользователей.']
+  },
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2-%D0%B8%D0%B2%D0%B0%D0%BD%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-b7803526a/',
+    github: 'https://github.com/Whatislovetrade',
+    telegram: 'telegram.com',
+    instagram: 'insta.com'
   },
 }
 
@@ -57,10 +61,11 @@ const skills = [
   'Redux',
   'SASS',
   'Material UI',
+  'Redux toolkit',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Tailwind CSS',
+  'Docker',
 ]
 
 const contact = {

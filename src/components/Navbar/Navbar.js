@@ -63,7 +63,7 @@ const Navbar = () => {
               onClick={closeNav}
               className='link link--nav'
             >
-              соц.сети
+              контакты
             </a>
           </li>
         ) : null}
